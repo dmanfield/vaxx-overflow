@@ -59,7 +59,9 @@ STATE_CHOICES = [
 class Clinic(models.Model):
     first_name = models.CharField(max_length=25, null=False)
     last_name = models.CharField(max_length=25, null=False)
+    username = models.CharField(max_length=25, null=False)
     email = models.EmailField(null=False)
+    password = models.CharField(max_length=25, null=False)
     provider_name = models.CharField(max_length=50, null=False)
     business_email = models.EmailField(null=False)
     business_phone = PhoneNumberField()
@@ -80,7 +82,3 @@ class Address(models.Model):
     def __str__(self):
         return f"{self.street_address}, {self.city}, {self.state}"
 
-
-
-    def __str__(self):
-        return f"You live in {self.city}"
