@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'Users',
     'Clinics',
     'phonenumber_field',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [

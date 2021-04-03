@@ -64,6 +64,9 @@ class Clinic(models.Model):
     business_email = models.EmailField(null=False)
     business_phone = PhoneNumberField()
 
+    def __str__(self):
+        return f"{self.provider_name}"
+
 
 
 
@@ -73,5 +76,8 @@ class Address(models.Model):
     state = models.CharField(max_length=20, choices=STATE_CHOICES, null=False)
     zipcode = models.IntegerField(null=False)
     clinic = models.ForeignKey(Clinic, on_delete=models.CASCADE, related_name="addresses")
+
+    def __str__(self):
+        return f"{self.street_address}, {self.city}, {self.state}"
 
 
