@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os
+from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,6 +28,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TWILIO_ACCOUNT_SID = config("TWILIO_ACCOUNT_SID")
+TWILIO_AUTH_TOKEN = config("TWILIO_AUTH_TOKEN")
+TWILIO_NUMBER = config("TWILIO_NUMBER")
+SMS_BROADCAST_TO_NUMBERS = [ 
+    # "+16306666273",
+    # "+16077453120",
+    # "+12146819823",
+    # "+13317073129",
+    # "+18152747087",
+]
+
+# "+18152747087",
 
 # Application definition
 
@@ -40,6 +53,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'clinics.apps.ClinicsConfig',
     'phonenumber_field',
+    'broadcast',
     'multiselectfield',
     'rest_framework',
     'knox',
