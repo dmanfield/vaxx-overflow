@@ -3,28 +3,6 @@ from phonenumber_field.modelfields import PhoneNumberField
 
 
 
-
-class Clinic(models.Model):
-    first_name = models.CharField(max_length=25, null=False)
-    last_name = models.CharField(max_length=25, null=False)
-    email = models.EmailField(null=False)
-    provider_name = models.CharField(max_length=50, null=False)
-    business_email = models.EmailField(null=False)
-    business_phone = PhoneNumberField()
-
-
-
-
-class Address(models.Model):
-    street_address = models.CharField(max_length=100, null=False)
-    city = models.CharField(max_length=50, null=False)
-    state = models.CharField(choices=STATE_CHOICES, null=False)
-    zipcode = models.IntegerField(null=False)
-    clinic = models.ForeignKey(Clinic, on_delete=models.CASCADE, related_name="addresses")
-
-
-
-
 STATE_CHOICES = [
 	('AL', 'Alabama'),
 	('AK', 'Alaska'),
@@ -76,3 +54,24 @@ STATE_CHOICES = [
 	('WI', 'Wisconsin'),
 	('WY', 'Wyoming')
 ]
+
+
+class Clinic(models.Model):
+    first_name = models.CharField(max_length=25, null=False)
+    last_name = models.CharField(max_length=25, null=False)
+    email = models.EmailField(null=False)
+    provider_name = models.CharField(max_length=50, null=False)
+    business_email = models.EmailField(null=False)
+    business_phone = PhoneNumberField()
+
+
+
+
+class Address(models.Model):
+    street_address = models.CharField(max_length=100, null=False)
+    city = models.CharField(max_length=50, null=False)
+    state = models.CharField(max_length=20, choices=STATE_CHOICES, null=False)
+    zipcode = models.IntegerField(null=False)
+    clinic = models.ForeignKey(Clinic, on_delete=models.CASCADE, related_name="addresses")
+
+
