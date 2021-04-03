@@ -1,4 +1,6 @@
-const Button = styled.button`
+import styled from 'styled-components'
+
+const StyledButton = styled.button`
   background-color: white;
   color: black;
   font-size: 20px;
@@ -14,6 +16,9 @@ const Button = styled.button`
   position: absolute;
 `;
 // Usage
-<Button onClick={sayHello}>
-  Sign In
-</Button>
+
+function Button() {
+  return <StyledButton>Sign In</StyledButton>
+}
+
+export default Button;
