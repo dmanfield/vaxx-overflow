@@ -53,7 +53,6 @@ class User(models.Model):
     phone_number = PhoneNumberField(null=False)
     zipcode = models.IntegerField(null=False)
     date_of_birth = models.DateField(null=False)
-    age = models.IntegerField(null=False)
     
 
 
@@ -62,3 +61,5 @@ class User(models.Model):
     #health_info = Might need to make this into multiple parts.
     vaccine_brands = models.CharField(max_length=20,choices=VACCINE_CHOICES)
 
+    def __str__(self):
+        return f"Hello {self.first_name}"
