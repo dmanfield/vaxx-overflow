@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'Clinics.apps.ClinicsConfig',
     'phonenumber_field',
     'broadcast',
+    'multiselectfield',
 ]
 
 MIDDLEWARE = [

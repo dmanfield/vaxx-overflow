@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import User
+from .models import People
 # Register your models here.
 
 
-class UserAdmin(admin.ModelAdmin):
-    fields = ["first_name", "last_name", "email", "gender", "phone_number", "zipcode", "date_of_birth", "job", "phase_category", "vaccine_brands"]
+class PeopleAdmin(admin.ModelAdmin):
+    fields = ["first_name", "last_name", "email", "gender", "phone_number", "zipcode", "date_of_birth", "job", "group_living", "vaccine_brands", "health_condition"]
 
-admin.site.register(User, UserAdmin)
+admin.site.register(People, PeopleAdmin)
