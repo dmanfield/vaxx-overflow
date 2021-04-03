@@ -81,3 +81,6 @@ class Address(models.Model):
         return f"{self.street_address}, {self.city}, {self.state}"
 
 
+
+    def __str__(self):
+        return f"You live in {self.city}"

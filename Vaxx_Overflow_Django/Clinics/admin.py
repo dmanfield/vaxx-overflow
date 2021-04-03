@@ -1,8 +1,6 @@
 from django.contrib import admin
-
-# Register your models here.
-from django.contrib import admin
 from .models import Clinic, Address
+# Register your models here.
 
 
 class ClinicAdmin(admin.ModelAdmin):
