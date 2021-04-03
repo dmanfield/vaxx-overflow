@@ -25,3 +25,4 @@ requests==2.25.1
 six==1.15.0
 twilio==6.55.0
 urllib3==1.26.4
+python-decouple==3.4
