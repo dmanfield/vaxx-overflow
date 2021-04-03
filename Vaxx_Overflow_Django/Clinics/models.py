@@ -64,6 +64,9 @@ class Clinic(models.Model):
     business_email = models.EmailField(null=False)
     business_phone = PhoneNumberField()
 
+    def __str__(self):
+        return f"Hello {self.first_name}"
+
 
 
 
@@ -75,3 +78,6 @@ class Address(models.Model):
     clinic = models.ForeignKey(Clinic, on_delete=models.CASCADE, related_name="addresses")
 
 
+
+    def __str__(self):
+        return f"You live in {self.city}"
