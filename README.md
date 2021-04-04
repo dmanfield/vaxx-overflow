@@ -11,8 +11,8 @@
  
 <br />
 
-<em align="right" width="100">
-  Powered by CodePlatoon
-</em>
+<p align="right" width="100">
+  <em>Powered by CodePlatoon</em>
+</p>
 
 
