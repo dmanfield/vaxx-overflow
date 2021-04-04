@@ -71,16 +71,19 @@ const StyledTextDiv = styled.div`
    top: 20px;
 `;
 
-function DropForm (x) {
-  return <StyledTextDiv> 
+function options(options) {
+  return (options.map((x) => <option>{x}</option>))
+}
+
+function DropForm(x) {
+  let form = <StyledTextDiv> 
   <StyledLabel>{x.label}</StyledLabel>
   <StyledDropForm placeholder={x.placeholder} type="Text" state="default" >
-    <option>1(a)</option>
-    <option>1(b)</option>
-    <option>1(c)</option>
-    <option>2</option>
-  </StyledDropForm>
-</StyledTextDiv>
+    {options(x.options)}
+    </StyledDropForm>
+    </StyledTextDiv>
+
+  return form 
 }
 
 export default DropForm;

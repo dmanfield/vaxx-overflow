@@ -13,7 +13,7 @@ import PRegPageTwo from './pages/provider/PRegPageTwo';
 import PLogin from './pages/provider/PLogin';
 import SendNotifications from './pages/provider/PSendNotifications';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
+import NotificationsSent from './pages/provider/PSent';
 
 function App() {
 
@@ -29,6 +29,7 @@ function App() {
         <Route exact path="/pregpagetwo/" component={ PRegPageTwo } />
         <Route exact path="/login/" component={ PLogin }/>
         <Route exact path="/send/" component={ SendNotifications }/>
+        <Route exact path="/sent/" component={ NotificationsSent } />
       </Router>
       </div>
     </div>                          
