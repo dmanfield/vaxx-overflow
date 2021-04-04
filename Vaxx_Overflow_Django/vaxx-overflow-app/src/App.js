@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import ProviderRegisterPage from './pages/provider/ProviderRegisterPage';
 import UserRegisterPage from './pages/user/UserRegisterPage';
 import PRegPageOne from './pages/provider/PRegPageOne';
+import PRegPageTwo from './pages/provider/PRegPageTwo';
 import PLogin from './pages/provider/PLogin';
 import SendNotifications from './pages/provider/PSendNotifications';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/userregistration/" component={UserRegisterPage} />
         <Route exact path="/providerregistration/" component={ProviderRegisterPage} />
         <Route exact path="/pregpageone/" component={ PRegPageOne } />
+        <Route exact path="/pregpagetwo/" component={ PRegPageTwo } />
         <Route exact path="/login/" component={ PLogin }/>
         <Route exact path="/send/" component={ SendNotifications }/>
       </Router>

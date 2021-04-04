@@ -9,44 +9,12 @@ import PrimaryButton from '../../components/Button/PrimaryButton';
 import InputField from '../../components/InputField/InputField';
 
 
-const PRegPageOne =()=> {
-  const [values, setValues] = useState({"firstName": ""})
-  // const SignUp = () => {
-  //   const history = useHistory();
-  //   // prevent user from changing data (security)
-  //   const initialFormData = Object.freeze({
-  //     email: '',
-  //     username: '',
-  //     password: '',
-  //   })
-  // }
+const PRegPageOne =(props)=> {
 
-  // const changeHandler = (e) => {
-  //   updateFormData({
-  //     ...formData,
-  //     // Trim whitespace
-  //     [e.target.name]: e.target.value.trim(),
-  //   })
-  // }
+  const onClickHandler =() => {
 
-  // const onSubmitHandler = (e) => {
-  //   e.preventDefault()
-  //   console.log(formData);
-
-  //   axiosInstance.post(`/api/token/adf`)
-  // }
-  const onClickHandler = (e) => {
-    e.preventDefault()
-    console.log("i was clicked")
   }
-
-  const onChangeHandler = (e) => {
-    // setValues({"firstName": e.target.value})
-    console.log(e.target.value)
-  }
-
-  console.log(InputField)
-
+  
   return (
     <div className="centered-div">
       <header className="frame-1">
@@ -57,11 +25,11 @@ const PRegPageOne =()=> {
       <form className="initial-form">
         <InputField placeholder="" label="First Name" value={values.firstName} changeAction={(e) => console.log(e.target.value)}/>
         <InputField placeholder="" label="Last Name"/>
-        <InputField placeholder="" label="Email Name"/>
-        <InputField placeholder="" label="Password Name"/>
+        <InputField placeholder="" label="Email"/>
+        <InputField placeholder="" label="Password"/>
       </form>
       <div id="main-primary-button">
-        <PrimaryButton  id="primary-button" text="REGISTER" clickAction={() => console.log("clicked45")}/>
+        <PrimaryButton  id="primary-button" text="NEXT SECTION" clickAction={ ()=>{props.history.push("/pregpagetwo/")} }/>
       </div>
     </div>
   );

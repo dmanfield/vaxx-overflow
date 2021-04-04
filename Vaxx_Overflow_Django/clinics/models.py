@@ -1,8 +1,6 @@
 from django.db import models
-from django.utils import timezone
-from django.utils.translation import gettext_lazy as _
 from phonenumber_field.modelfields import PhoneNumberField
-from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
+
 
 
 STATE_CHOICES = [
@@ -58,7 +56,17 @@ STATE_CHOICES = [
 ]
 
 
+class Clinic(models.Model):
+    first_name = models.CharField(max_length=25, null=False)
+    last_name = models.CharField(max_length=25, null=False)
+    username = models.CharField(max_length=25, null=False)
+    email = models.EmailField(null=False)
+    password = models.CharField(max_length=25, null=False)
+    provider_name = models.CharField(max_length=50, null=False)
+    business_email = models.EmailField(null=False)
+    business_phone = PhoneNumberField()
 
+<<<<<<< HEAD
 class CustomAccountManager(BaseUserManager):
 
 	def create_superuser(self, email, user_name, first_name, password, **other_fields):
@@ -108,6 +116,10 @@ class Clinic(AbstractBaseUser, PermissionsMixin):
 
 	def __str__(self):
 		return f"{self.provider_name}"
+=======
+    def __str__(self):
+        return f"{self.provider_name}"
+>>>>>>> ee42b50fada5564761db720e8a11b0dfed11bfc2
 
 
 

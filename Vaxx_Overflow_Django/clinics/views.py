@@ -2,9 +2,6 @@ from rest_framework import generics, permissions
 from rest_framework.response import Response
 from knox.models import AuthToken
 from .serializers import ClinicSerializer, RegisterSerializer
-from rest_framework.authtoken.serializers import AuthTokenSerializer
-from django.contrib.auth import login
-from knox.views import LoginView as KnoxLoginView
 
 # Need these for APIView (registering a new user)
 from rest_framework.permissions import AllowAny

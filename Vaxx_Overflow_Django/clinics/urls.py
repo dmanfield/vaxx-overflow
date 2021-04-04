@@ -1,4 +1,4 @@
-from .views import RegisterAPI, LoginAPI
+from .views import RegisterAPI
 from django.urls import path
 from knox import views as knox_views
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
