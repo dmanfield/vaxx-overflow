@@ -30,7 +30,7 @@ box-shadow:  0px 19px 19px 31px #e4e4e4;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .frame-1 {
@@ -47,6 +47,14 @@ box-shadow:  0px 19px 19px 31px #e4e4e4;
   height: 203.85px;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.input-form {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #main-primary-button {
@@ -105,7 +113,6 @@ header h2 {
   width: 312px;
   height: 48px;
   left: 0px;
-  top: 76px;
 
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
@@ -118,6 +125,14 @@ header h2 {
 
 .initial-form {
   margin: 25px;
+}
+
+.tip {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .buttons-list {
@@ -203,17 +218,22 @@ header h2 {
 }
 
 .long-con {
+  margin-top: 30px;
+  margin-bottom: 60px;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .long-box {
-  position: relative;
-  height: 150px;
-  vertical-align: center;
+  width: 100%;
+  height: 100px;
+  overflow-y: auto;
+  border: solid 1px #333333;
+  margin: 10px;
+  border-radius: 6px;
+  padding: 5px;
 }
 
 
@@ -223,4 +243,19 @@ header h2 {
     border: none;
     background-color: #ffff;
   }
+}
+
+.green-checkmark {
+
+}
+
+.user-reg-success {
+  position: relative;
+  width: 80%;
+  height: 40px;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  
+
 }

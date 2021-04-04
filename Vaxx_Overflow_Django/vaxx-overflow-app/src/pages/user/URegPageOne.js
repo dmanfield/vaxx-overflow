@@ -13,15 +13,8 @@ const URegPageOne =(props)=> {
   
   const [values,setValues] = useState({ "firstName": "", "lastName": "", "email": "", "password": ""})
 
-  const onClickHandler =() => {
-    props.history.push("/uregpagetwo/")
-    localStorage.setItem("email", "email")
-    
-  }
+  
 
-  // const onChangeHandler = () => {
-
-  // }
 
   console.log(InputField)
   return (
@@ -38,7 +31,7 @@ const URegPageOne =(props)=> {
         <InputField placeholder="" label="Password" />
       </form>
       <div id="main-primary-button">
-        <PrimaryButton  id="primary-button" text="NEXT SECTION" clickAction={ onClickHandler }/>
+        <PrimaryButton  id="primary-button" text="NEXT SECTION" clickAction={ ()=>{props.history.push("/uregpagetwo/")} }/>
       </div>
     </div>
   );

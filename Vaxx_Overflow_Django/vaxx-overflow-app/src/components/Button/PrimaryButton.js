@@ -29,12 +29,11 @@ text-transform: uppercase;
 color: #3F7F82;
 
 &:hover {
+  font-family: 'Montserrat', sans-serif;
   background: #BBDCDE;
   border: 2px solid #414141;
-  font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 600;
   line-height: 20px;
   color: #333333;
 }

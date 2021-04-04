@@ -9,6 +9,8 @@ import CheckBox from '../../components/CheckBox/InlineCheckbox';
 import Selector from '../../components/QuantitySelector';
 
 
+
+
 const PRegPageOne =()=> {
   let history = useHistory()
 
@@ -50,7 +52,11 @@ const PRegPageOne =()=> {
         </div>
       </div>
       <div id="main-primary-button">
+<<<<<<< HEAD
         <PrimaryButton  id="primary-button" text="send notifications" clickAction={onClickHandler}/>
+=======
+        <PrimaryButton  id="primary-button" text="send notifications" />
+>>>>>>> ef183def32aad51e530143e26df3485d4568638c
       </div>
     </div>
   );
