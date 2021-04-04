@@ -12,7 +12,7 @@
 <br />
 
 <p align="right" width="100">
-  Powered by CodePlatoon
+  *Powered by CodePlatoon*
 </p>
 
 
