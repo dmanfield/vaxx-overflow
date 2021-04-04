@@ -1,11 +1,15 @@
-
 import React from 'react'
+
+// static
 import '../../images/OrangeVirus.svg'
+
+// components
 import PrimaryButton from '../../components/Button/PrimaryButton';
 import SecondaryButton from '../../components/Button/SecondaryButton'
 
-function UserRegisterPage() {
 
+function UserRegisterPage() {
+  
   return (
     <div className="centered-div">
     <header className="frame-1">
