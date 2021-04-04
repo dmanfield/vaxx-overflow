@@ -1,13 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 .App {
   text-align: center;
 }
 
-/* header {
-
-} */
-
 header h2 {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -29,7 +28,7 @@ header h2 {
 }
 
 #vaxx {
-  font-family: fantasy sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 36px;
@@ -43,7 +42,7 @@ header h2 {
 }
 
 #overflow {
-  font-family: fantasy, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 36px;
@@ -62,7 +61,7 @@ header h2 {
   left: 0px;
   top: 76px;
 
-  font-family: fantasy;
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
@@ -97,4 +96,52 @@ header h2 {
   top: 37.68%;
   bottom: 37.68%;
 
+}
+
+#main-primary-button {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  height: 48px;
+  top: 656px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+#primary-button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+#providers-secondary-button {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  height: 48px;
+  top: 725px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+#secondary-button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
+
+.form-box {
+  position: absolute;
+  width: 90%;
+  /* margin: auto; */
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  top: 250px;
+  padding-left: 5%;
 }

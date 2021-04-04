@@ -1,7 +1,10 @@
 import React from 'react'
 import "../images/Illustration.svg"
+import PrimaryButton from '../components/Button/PrimaryButton'
+import SecondaryButton from '../components/Button/SecondaryButton'
 
-function HomePage () {
+
+const HomePage = (props) => {
 
   return(
     <div >
@@ -12,6 +15,12 @@ function HomePage () {
       </header>
       <div>
         <img id= "illustration" src={require("../images/Illustration.svg").default} alt="Illustration"/>  
+      </div>
+      <div id="main-primary-button">
+        <PrimaryButton  id="primary-button" text="PROVIDERS" onClick={ console.log("fuck") }></PrimaryButton>
+      </div>
+      <div id="providers-secondary-button">
+        <SecondaryButton text="GET VACCINATED" id="secondary-button" />
       </div>
     </div>
 

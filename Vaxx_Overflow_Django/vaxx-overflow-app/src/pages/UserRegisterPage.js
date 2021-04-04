@@ -1,5 +1,7 @@
 import React from 'react'
 import "../images/GreenVirus.svg"
+import PrimaryButton from '../components/Button/PrimaryButton'
+import SecondaryButton from '../components/Button/SecondaryButton'
 
 function UserRegisterPage() {
 
@@ -13,6 +15,12 @@ function UserRegisterPage() {
     <div>
       <img id= "greenvirus" src={require("../images/GreenVirus.svg").default} alt="Green Virus"/>  
     </div>
+    <div id="main-primary-button">
+        <PrimaryButton  id="primary-button" text="REGISTER"></PrimaryButton>
+      </div>
+      <div id="providers-secondary-button">
+        <SecondaryButton text="GET VACCINATED" id="secondary-button" />
+      </div>
   </div>
   )
 };
