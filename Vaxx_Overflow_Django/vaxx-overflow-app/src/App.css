@@ -1,1 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.App {
+  text-align: center;
+}
+
+/* header {
+
+} */
+
+header h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  /* identical to box height, or 111% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.frame-1 {
+  position: absolute;
+  width: 312px;
+  height: 124px;
+  left: 32px;
+  top: 60px;
+}
+
+#vaxx {
+  font-family: fantasy sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 40px;
+  align-items: center;
+  position: absolute;
+  width: 103px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+}
+
+#overflow {
+  font-family: fantasy, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 40px;
+  position: absolute;
+  width: 223px;
+  height: 40px;
+  left: 0px;
+  top: 32px;
+}
+
+#heading-paragraph {
+  position: absolute;
+  width: 312px;
+  height: 48px;
+  left: 0px;
+  top: 76px;
+
+  font-family: fantasy;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+}
+
+#illustration {
+  position: absolute;
+  width: 312px;
+  height: 203.85px;
+  left: 32px;
+  top: 304px;
+}
+
+#greenvirus {
+  position: absolute;
+  left: 20.27%;
+  right: 20.34%;
+  top: 37.68%;
+  bottom: 37.68%;
+
+}
+
+#orangevirus {
+  position: absolute;
+  left: 20.27%;
+  right: 20.34%;
+  top: 37.68%;
+  bottom: 37.68%;
+
+}
