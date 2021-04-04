@@ -58,16 +58,6 @@ flex-grow: 0;
 margin: 0px 8px;
 `;
 
-// const Box =()=> {
-//     const [ checked, setChecked ] = React.useState(false)
-
-//     const toggle = () => {
-//         setChecked(true)
-//     }
-
-//     return <StyledCheck type="button" state="default" checked={checked}></StyledCheck>
-// }
-
 function CheckBox(x) {
    return <StyledTextDiv> 
       <StyledCheck type="checkbox"></StyledCheck>

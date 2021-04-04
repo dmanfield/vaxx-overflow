@@ -19,9 +19,9 @@ const URegPageOne =(props)=> {
     
   }
 
-  const onChangeHandler = () => {
+  // const onChangeHandler = () => {
 
-  }
+  // }
 
   console.log(InputField)
   return (
