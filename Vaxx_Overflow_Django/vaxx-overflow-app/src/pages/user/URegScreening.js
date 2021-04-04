@@ -29,7 +29,7 @@ function UserScreeningPage() {
        </div>
     </div>
     <div id="providers-secondary-button">
-        <SecondaryButton text="next" id="secondary-button" />
+        <SecondaryButton text="next" id="secondary-button"  />
       </div>
   </div>
   )

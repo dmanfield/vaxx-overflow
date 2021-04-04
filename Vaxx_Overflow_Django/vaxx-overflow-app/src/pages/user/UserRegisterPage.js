@@ -8,7 +8,7 @@ import PrimaryButton from '../../components/Button/PrimaryButton';
 import SecondaryButton from '../../components/Button/SecondaryButton'
 
 
-function UserRegisterPage() {
+const UserRegisterPage = (props) => {
   
   return (
     <div className="centered-div">
@@ -21,10 +21,10 @@ function UserRegisterPage() {
       <img className="illustration" src={require("../../images/GreenVirus.svg").default} alt="Green Virus"/>  
     </div>
     <div id="main-primary-button">
-        <PrimaryButton  id="primary-button" text="REGISTER"></PrimaryButton>
+        <PrimaryButton  id="primary-button" text="REGISTER" clickAction={ ()=>{props.history.push("/uregpageone/")} }></PrimaryButton>
       </div>
       <div id="providers-secondary-button">
-        <SecondaryButton text="GET VACCINATED" id="secondary-button" />
+        <SecondaryButton text="LOGIN" id="secondary-button" clickAction={ ()=>{console.log(":")} }/>
       </div>
   </div>
   )

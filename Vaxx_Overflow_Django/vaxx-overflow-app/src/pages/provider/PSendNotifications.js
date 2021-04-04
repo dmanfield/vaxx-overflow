@@ -1,4 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {useHistory} from 'react-router-dom'
+// import axiosInstance from "../../axios"
+import axios from 'axios'
 import PrimaryButton from '../../components/Button/PrimaryButton';
 import InputField from '../../components/InputField/InputField';
 import DropForm from  '../../components/DropForm/DropForm';
@@ -6,7 +9,22 @@ import CheckBox from '../../components/CheckBox/InlineCheckbox';
 import Selector from '../../components/QuantitySelector';
 
 
+
+
 const PRegPageOne =()=> {
+  let history = useHistory()
+
+  const onClickHandler = async () => {
+    try {
+      let res = await axios.get('http://localhost:8000/broadcast')
+      console.log(res)
+      history.push('/sent')
+    } catch (error) {
+      console.log(error)
+    }
+    
+  }
+
   return (
     <div className="centered-div">
       <header className="frame-1">
@@ -34,7 +52,7 @@ const PRegPageOne =()=> {
         </div>
       </div>
       <div id="main-primary-button">
-        <PrimaryButton  id="primary-button" text="send notifications"/>
+        <PrimaryButton  id="primary-button" text="send notifications" clickAction={onClickHandler}/>
       </div>
     </div>
   );
