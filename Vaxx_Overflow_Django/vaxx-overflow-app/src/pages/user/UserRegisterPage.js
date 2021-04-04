@@ -23,9 +23,6 @@ const UserRegisterPage = (props) => {
     <div id="main-primary-button">
         <PrimaryButton  id="primary-button" text="REGISTER" clickAction={ ()=>{props.history.push("/uregpageone/")} }></PrimaryButton>
       </div>
-      <div id="providers-secondary-button">
-        <SecondaryButton text="LOGIN" id="secondary-button" clickAction={ ()=>{console.log(":")} }/>
-      </div>
   </div>
   )
 };

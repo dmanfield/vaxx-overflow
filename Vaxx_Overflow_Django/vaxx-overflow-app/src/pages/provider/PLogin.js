@@ -4,10 +4,18 @@ import InputField from '../../components/InputField/InputField';
 
 
 const SendNotifications =(props)=> {
-  
-  const onSubmitHandler = (e) => {
-    e.preventDefault()
+  const [passwordDisplay, setPasswordDisplay] = useState("")
+  const [passwordValue, setPasswordValue] = useState("")
+
+  const maskInput =(e)=> {
+    let output = ""
+    for (let i = 0; i < e.length; i++) {
+      output+="•"
+    }
+    setPasswordDisplay(output)
+    setPasswordValue(e)
   }
+
   return (
     <div className="centered-div">
       <header className="frame-1">
@@ -17,10 +25,10 @@ const SendNotifications =(props)=> {
       </header>
       <form className="initial-form">
         <InputField placeholder="" label="Email"/>
-        <InputField placeholder="" label="Password"/>
+        <InputField placeholder="" label="Password" changeAction={e => maskInput(e.target.value)} value={passwordDisplay}/>
       </form>
       <div id="main-primary-button">
-        <PrimaryButton  id="primary-button" text="login" clickAction={ ()=>{props.history.push("/send/")} }/>
+        <PrimaryButton  id="primary-button" text="login" clickAction={ ()=>{props.history.push("/send/")}}/>
       </div>
     </div>
   );
