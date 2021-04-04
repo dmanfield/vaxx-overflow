@@ -105,7 +105,6 @@ header h2 {
   width: 312px;
   height: 48px;
   left: 0px;
-  top: 76px;
 
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
@@ -203,17 +202,23 @@ header h2 {
 }
 
 .long-con {
+  /* height: 50vh; */
+  margin-top: 30px;
+  margin-bottom: 60px;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .long-box {
-  position: relative;
-  height: 150px;
-  vertical-align: center;
+  width: 100%;
+  height: 100px;
+  overflow-y: auto;
+  border: solid 1px #333333;
+  margin: 10px;
+  border-radius: 6px;
+  padding: 5px;
 }
 
 
