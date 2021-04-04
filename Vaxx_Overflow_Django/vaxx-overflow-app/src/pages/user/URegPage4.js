@@ -24,7 +24,7 @@ const URegPageFour = (props) => {
         </div>
       </div>
       <div id="main-primary-button" style={{padding: "100px"}}>
-        <PrimaryButton  id="primary-button" text="SUBMIT" clickAction={() => console.log(":)")}/>
+        <PrimaryButton  id="primary-button" text="SUBMIT" clickAction={ ()=>{props.history.push("/userregcompleted/")} } />
       </div>
     </div>
   );
