@@ -1,3 +1,7 @@
+import PrimaryButton from '../../components/Button/PrimaryButton';
+import CheckBox from '../../components/CheckBox/InlineCheckbox';
+// import InputField from '../../components/InputField/InputField';
+
 function UserScreeningPage() {
   
   return (
@@ -11,40 +15,23 @@ function UserScreeningPage() {
         Next, fill out a screening form to check your elegibilty with local and CDC guidelines.
       </h3>
     </div>
-    <div>
-      <h2>
-        1 - Have you recieved a Covid-19 authorization? 
-      </h2>
-      <input type="radio" name="yes" value="yes"> Yes </input>
-      <input type="radio" name="no" value="no"> No </input>
-    </div>
-    <div>
-      <h2>
-        2 - Do you feel sick, or have you experienced any of these symptoms in the last 24 hours:
-      </h2>
-        <h3> 104º<span>&#176;</span> fever, sore throat, cough, shortness of breath, headache, nausea, vomiting, diarrhea, loss of taste or smell, chills.</h3>
-      <input type="radio" name="yes" value="yes"> Yes </input>
-      <input type="radio" name="no" value="no"> No </input>
-    </div>
-    <div>
-      <h2>
-        3 - Have you tested positive for Covid-19 in the last two weeks?
-      </h2>
-      <input type="radio" name="yes" value="yes"> Yes </input>
-      <input type="radio" name="no" value="no"> No </input>
-    </div>
-    <div>
-      <h2>
-        4 - Do you have chronic health conditions such as:
-      </h2>
-      <h3>Cancer, kidney disease, autoimmune disease, chronic lung disease, obesity, sickle cell disease, diabetes, heart disease, or any chronic condition?</h3>
-      <input type="radio" name="yes" value="yes"> Yes </input>
-      <input type="radio" name="no" value="no"> No </input>
-    </div>
-    <div id="main-primary-button">
-        <PrimaryButton  id="primary-button" text="NEXT SECTION" clickAction={ onClickHandler }/>
+    <div className="long-con">
+      <div className="long-box">
+        <CheckBox label={"1 - Have you recieved a Covid-19 authorization?"}></CheckBox>
       </div>
-  
+      <div className="long-box">
+        <CheckBox label={"2 - Do you feel sick, or have you experienced any of these symptoms in the last 24 hours: 104º fever, sore throat, cough, shortness of breath, headache, nausea, vomiting, diarrhea, loss of taste or smell, chills."}></CheckBox>
+      </div>
+      <div className="long-box">
+        <CheckBox label={"3 - Have you tested positive for Covid-19 in the last two weeks?"}></CheckBox>
+        </div>
+      <div className="long-box">
+       <CheckBox label={"4 - Do you have chronic health conditions such as: Cancer, kidney disease, autoimmune disease, chronic lung disease, obesity, sickle cell disease, diabetes, heart disease, or any chronic condition?"}></CheckBox>
+       </div>
+    </div>
+
   </div>
   )
 };
+
+export default UserScreeningPage;
