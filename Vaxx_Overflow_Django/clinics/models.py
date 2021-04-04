@@ -66,7 +66,6 @@ class Clinic(models.Model):
     business_email = models.EmailField(null=False)
     business_phone = PhoneNumberField()
 
-<<<<<<< HEAD
 class CustomAccountManager(BaseUserManager):
 
 	def create_superuser(self, email, user_name, first_name, password, **other_fields):
@@ -116,10 +115,6 @@ class Clinic(AbstractBaseUser, PermissionsMixin):
 
 	def __str__(self):
 		return f"{self.provider_name}"
-=======
-    def __str__(self):
-        return f"{self.provider_name}"
->>>>>>> ee42b50fada5564761db720e8a11b0dfed11bfc2
 
 
 
