@@ -11,8 +11,8 @@
  
 <br />
 
-*<p align="right" width="100">
+<em align="right" width="100">
   Powered by CodePlatoon
-</p>*
+</em>
 
 
