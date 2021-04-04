@@ -8,6 +8,7 @@ import DropForm from './components/DropForm/DropForm';
 import HomePage from './pages/HomePage';
 import ProviderRegisterPage from './pages/provider/ProviderRegisterPage';
 import UserRegisterPage from './pages/user/UserRegisterPage';
+import URegPageFour from './pages/user/URegPage4';
 import UserRegCompleted from './pages/user/UserRegCompleted'
 import URegPageTwo from './pages/user/URegPage2';
 import URegPageOne from './pages/user/URegPageOne';
@@ -27,6 +28,9 @@ function App() {
       <Router>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/userregistration/" component={UserRegisterPage} />
+        <Route exact path="/uregpageone/" component={URegPageOne} />
+        <Route exact path="/providerregistration/" component={ProviderRegisterPage} />
+        <Route exact path="/uregpagefour/" component={ URegPageFour } />
         <Route exact path="/uregpagetwo/" component={ URegPageTwo } />
         <Route exact path="/uregpageone/" component={ URegPageOne } />
         <Route exact path="/uregscreening/" component={UserScreeningPage} />
