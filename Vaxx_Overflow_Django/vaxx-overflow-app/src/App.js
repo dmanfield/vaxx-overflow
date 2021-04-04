@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import ProviderRegisterPage from './pages/provider/ProviderRegisterPage';
 import UserRegisterPage from './pages/user/UserRegisterPage';
 import URegPageFour from './pages/user/URegPage4';
+import UserRegCompleted from './pages/user/UserRegCompleted'
 import URegPageTwo from './pages/user/URegPage2';
 import URegPageOne from './pages/user/URegPageOne';
 import PRegPageOne from './pages/provider/PRegPageOne';
@@ -36,6 +37,7 @@ function App() {
         <Route exact path="/providerregistration/" component={ ProviderRegisterPage } />
         <Route exact path="/pregpageone/" component={ PRegPageOne } />
         <Route exact path="/pregpagetwo/" component={ PRegPageTwo } />
+        <Route exact path="/userregcompleted/" component ={UserRegCompleted} />
         <Route exact path="/login/" component={ PLogin }/>
         <Route exact path="/send/" component={ SendNotifications }/>
         <Route exact path="/sent/" component={ NotificationsSent } />
