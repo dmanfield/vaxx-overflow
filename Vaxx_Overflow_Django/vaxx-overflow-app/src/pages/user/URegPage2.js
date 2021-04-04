@@ -22,7 +22,7 @@ const URegPageTwo =(props)=> {
       </form>
       </div>
       <div id="main-primary-button">
-        <PrimaryButton  id="primary-button" text="SUBMIT" clickAction={() => console.log(":)")}/>
+        <PrimaryButton  id="primary-button" text="SUBMIT" clickAction={ ()=>{props.history.push("/uregscreening/")} }/>
       </div>
     </div>
   );
