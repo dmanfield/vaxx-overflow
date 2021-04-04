@@ -14,8 +14,7 @@ const URegPageTwo =(props)=> {
         <h3 id="heading-paragraph">We first need to gather your personal and health demographic information.</h3>
       </header>
       <form className="initial-form">
-        <InputField placeholder="" label="Last Name"/>
-        <DropForm placeholder="" label="Gender" options={['Male', 'Female', 'Other']}/>
+        <DropForm placeholder="" label="Gender" options={['Male', 'Female', 'Other/Prefer not to say']}/>
         <InputField placeholder="" label="Phone"/>
         <InputField placeholder="" label="Zipcode"/>
         <InputField placeholder="" label="Date of Birth" />
