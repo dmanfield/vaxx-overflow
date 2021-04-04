@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const StyledButton = styled.button`
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 width: 336px;
@@ -32,9 +32,10 @@ text-transform: uppercase;
 color: #F26121;
 
 &:hover {
-    border: 2px solid #F9B090;
-    box-sizing: border-box;
-    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
 }
 `;
 

@@ -13,12 +13,14 @@ const URegPageTwo =(props)=> {
         <h1 id="overflow">OVERFLOW</h1>
         <h3 id="heading-paragraph">We first need to gather your personal and health demographic information.</h3>
       </header>
-      <form className="initial-form">
+      <div className="input-form">
+      <form className=" tip">
         <DropForm placeholder="" label="Gender" options={['Male', 'Female', 'Other/Prefer not to say']}/>
         <InputField placeholder="" label="Phone"/>
         <InputField placeholder="" label="Zipcode"/>
         <InputField placeholder="" label="Date of Birth" />
       </form>
+      </div>
       <div id="main-primary-button">
         <PrimaryButton  id="primary-button" text="SUBMIT" clickAction={() => console.log(":)")}/>
       </div>
