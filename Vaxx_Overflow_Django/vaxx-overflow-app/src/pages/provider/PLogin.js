@@ -5,6 +5,9 @@ import InputField from '../../components/InputField/InputField';
 
 const SendNotifications =(props)=> {
   
+  const onSubmitHandler = (e) => {
+    e.preventDefault()
+  }
   return (
     <div className="centered-div">
       <header className="frame-1">
