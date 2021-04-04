@@ -74,7 +74,7 @@ const StyledTextDiv = styled.div`
 function InputField(x) {
    return <StyledTextDiv> 
       <StyledLabel>{x.label}</StyledLabel>
-      <StyledInput placeholder={x.placeholder} type="Text" state="default" ></StyledInput>
+      <StyledInput type="Text" state="default" ></StyledInput>
    </StyledTextDiv>
    
    
