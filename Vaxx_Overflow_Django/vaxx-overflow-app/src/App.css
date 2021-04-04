@@ -244,3 +244,18 @@ header h2 {
     background-color: #ffff;
   }
 }
+
+.green-checkmark {
+
+}
+
+.user-reg-success {
+  position: relative;
+  width: 80%;
+  height: 40px;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  
+
+}

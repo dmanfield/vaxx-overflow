@@ -8,6 +8,8 @@ import DropForm from './components/DropForm/DropForm';
 import HomePage from './pages/HomePage';
 import ProviderRegisterPage from './pages/provider/ProviderRegisterPage';
 import UserRegisterPage from './pages/user/UserRegisterPage';
+import URegPageFour from './pages/user/URegPage4';
+import UserRegCompleted from './pages/user/UserRegCompleted'
 import URegPageTwo from './pages/user/URegPage2';
 import URegPageOne from './pages/user/URegPageOne';
 import PRegPageOne from './pages/provider/PRegPageOne';
@@ -26,12 +28,16 @@ function App() {
       <Router>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/userregistration/" component={UserRegisterPage} />
+        <Route exact path="/uregpageone/" component={URegPageOne} />
+        <Route exact path="/providerregistration/" component={ProviderRegisterPage} />
+        <Route exact path="/uregpagefour/" component={ URegPageFour } />
         <Route exact path="/uregpagetwo/" component={ URegPageTwo } />
         <Route exact path="/uregpageone/" component={ URegPageOne } />
         <Route exact path="/uregscreening/" component={UserScreeningPage} />
         <Route exact path="/providerregistration/" component={ ProviderRegisterPage } />
         <Route exact path="/pregpageone/" component={ PRegPageOne } />
         <Route exact path="/pregpagetwo/" component={ PRegPageTwo } />
+        <Route exact path="/userregcompleted/" component ={UserRegCompleted} />
         <Route exact path="/login/" component={ PLogin }/>
         <Route exact path="/send/" component={ SendNotifications }/>
         <Route exact path="/sent/" component={ NotificationsSent } />
