@@ -5,6 +5,11 @@ import InputField from '../../components/InputField/InputField';
 
 const PRegPageTwo =(props)=> {
   console.log(props)
+  
+  const getStuff = () => {
+    const stuff = localStorage.getItem("email")
+    console.log(stuff)
+  }
   return (
     <div className="centered-div">
       <header className="frame-1">
@@ -18,7 +23,7 @@ const PRegPageTwo =(props)=> {
         <InputField placeholder="" label="Phone Number"/>
       </form>
       <div id="main-primary-button">
-        <PrimaryButton  id="primary-button" text="SUBMIT"/>
+        <PrimaryButton  id="primary-button" text="SUBMIT" clickAction={ getStuff }/>
       </div>
     </div>
   );
