@@ -147,5 +147,3 @@ REST_FRAMEWORK = {
         'knox.auth.TokenAuthentication',
     ]
 }
-
-AUTH_USER_MODEL = "clinics.Clinic"

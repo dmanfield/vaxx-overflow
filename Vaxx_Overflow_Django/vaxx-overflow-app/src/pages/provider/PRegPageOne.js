@@ -3,7 +3,12 @@ import PrimaryButton from '../../components/Button/PrimaryButton';
 import InputField from '../../components/InputField/InputField';
 
 
-const PRegPageOne =()=> {
+const PRegPageOne =(props)=> {
+
+  const onClickHandler =() => {
+
+  }
+  
   return (
     <div className="centered-div">
       <header className="frame-1">
@@ -14,11 +19,11 @@ const PRegPageOne =()=> {
       <form className="initial-form">
         <InputField placeholder="" label="First Name"/>
         <InputField placeholder="" label="Last Name"/>
-        <InputField placeholder="" label="Email Name"/>
-        <InputField placeholder="" label="Password Name"/>
+        <InputField placeholder="" label="Email"/>
+        <InputField placeholder="" label="Password"/>
       </form>
       <div id="main-primary-button">
-        <PrimaryButton  id="primary-button" text="REGISTER"/>
+        <PrimaryButton  id="primary-button" text="NEXT SECTION" clickAction={ ()=>{props.history.push("/pregpagetwo/")} }/>
       </div>
     </div>
   );
