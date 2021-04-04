@@ -32,9 +32,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-TWILIO_ACCOUNT_SID = config("TWILIO_ACCOUNT_SID")
-TWILIO_AUTH_TOKEN = config("TWILIO_AUTH_TOKEN")
-TWILIO_NUMBER = config("TWILIO_NUMBER")
+TWILIO_ACCOUNT_SID = "AC16aea967846359b5b4949ce9cd2fb3ca"
+TWILIO_AUTH_TOKEN = "3dcc9fadd7ecc79391157f530e57c8f4"
+TWILIO_NUMBER = "+15854929065"
+
 SMS_BROADCAST_TO_NUMBERS = [ 
     "+16306666273",
     # "+16077453120",
@@ -43,7 +44,7 @@ SMS_BROADCAST_TO_NUMBERS = [
     # "+18152747087",
 ]
 
-
+# "+18152747087",
 
 # Application definition
 
@@ -76,7 +77,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-     'http://localhost:3000',
+     'http://localhost:3000'
 ]
 
 ROOT_URLCONF = 'Vaxx_Overflow_Django.urls'
