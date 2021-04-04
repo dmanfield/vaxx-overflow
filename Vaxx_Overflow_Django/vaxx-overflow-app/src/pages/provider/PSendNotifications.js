@@ -6,6 +6,8 @@ import CheckBox from '../../components/CheckBox/InlineCheckbox';
 import Selector from '../../components/QuantitySelector';
 
 
+
+
 const PRegPageOne =()=> {
   return (
     <div className="centered-div">
@@ -34,7 +36,7 @@ const PRegPageOne =()=> {
         </div>
       </div>
       <div id="main-primary-button">
-        <PrimaryButton  id="primary-button" text="send notifications"/>
+        <PrimaryButton  id="primary-button" text="send notifications" />
       </div>
     </div>
   );
