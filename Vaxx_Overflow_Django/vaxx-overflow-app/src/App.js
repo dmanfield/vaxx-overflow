@@ -13,6 +13,7 @@ import PRegPageTwo from './pages/provider/PRegPageTwo';
 import PLogin from './pages/provider/PLogin';
 import SendNotifications from './pages/provider/PSendNotifications';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import URegPageOne from './pages/user/URegPageOne';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Router>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/userregistration/" component={UserRegisterPage} />
+        <Route exact path="/uregpageone/" component={URegPageOne} />
         <Route exact path="/providerregistration/" component={ProviderRegisterPage} />
         <Route exact path="/pregpageone/" component={ PRegPageOne } />
         <Route exact path="/pregpagetwo/" component={ PRegPageTwo } />
