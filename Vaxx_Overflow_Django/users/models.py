@@ -67,7 +67,7 @@ class People(models.Model):
     phone_number = PhoneNumberField(null=False)
     zipcode = models.IntegerField(null=False)
     date_of_birth = models.DateField(null=False)
-
+    
     
     health_condition = MultiSelectField(choices=HEALTH_CONDITION_CHOICES)
 
