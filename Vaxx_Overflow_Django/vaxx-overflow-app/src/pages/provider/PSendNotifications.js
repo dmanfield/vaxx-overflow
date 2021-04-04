@@ -15,7 +15,7 @@ const PRegPageOne =()=> {
         <h3 id="heading-paragraph">Register as a Provider.</h3>
       </header>
       <div>
-        <DropForm label={'Current CDC Phase'} />
+        <DropForm label={'Current CDC Phase'} options={['1(a)', '1(b)', '1(c)', '2']} />
       </div>
       <div className="buttons-list">
         <h4>Additional criteria for eligibility</h4>
