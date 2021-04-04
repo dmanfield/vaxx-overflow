@@ -42,7 +42,7 @@ color: #3F7F82;
 // Usage
 
 function PrimaryButton(x) {
-  return <StyledButton>{x.text}</StyledButton>
+  return <StyledButton onClick={x.clickAction}>{x.text}</StyledButton>
 }
 
 export default PrimaryButton;
