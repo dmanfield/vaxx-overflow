@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PrimaryButton from '../../components/Button/PrimaryButton';
 import InputField from '../../components/InputField/InputField';
 
 
 const SendNotifications =(props)=> {
+  
   return (
     <div className="centered-div">
       <header className="frame-1">

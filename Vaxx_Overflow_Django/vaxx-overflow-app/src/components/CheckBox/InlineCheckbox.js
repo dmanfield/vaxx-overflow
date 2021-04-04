@@ -48,25 +48,13 @@ flex-direction: row;
 align-items: flex-start;
 padding: 0px;
 
-position: static;
 width: 284px;
-height: 40px;
+height: auto;
 left: 28px;
 top: 0px;
 order: 1;
 flex-grow: 0;
-margin: 0px 8px;
 `;
-
-// const Box =()=> {
-//     const [ checked, setChecked ] = React.useState(false)
-
-//     const toggle = () => {
-//         setChecked(true)
-//     }
-
-//     return <StyledCheck type="button" state="default" checked={checked}></StyledCheck>
-// }
 
 function CheckBox(x) {
    return <StyledTextDiv> 
