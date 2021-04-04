@@ -145,3 +145,17 @@ header h2 {
   top: 250px;
   padding-left: 5%;
 }
+
+.form-box-provider-info {
+  position: absolute;
+  width: 90%;
+  /* margin: auto; */
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  top: 20%;
+  padding-left: 5%;
+  margin-top: 10%;
+  margin-bottom: 40%;
+}

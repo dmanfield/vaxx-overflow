@@ -12,10 +12,10 @@ const PRegPageOne =()=> {
         <h3 id="heading-paragraph">Register as a Provider.</h3>
       </header>
       <form className="form-box">
-        <InputField placeholder="" label="First Name"/>
-        <InputField placeholder="" label="Last Name"/>
-        <InputField placeholder="" label="Email Name"/>
-        <InputField placeholder="" label="Password Name"/>
+        <InputField placeholder="" label="Name"/>
+        <InputField placeholder="" label="Email"/>
+        <InputField placeholder="" label="User Name"/>
+        <InputField placeholder="" label="Password"/>
       </form>
       <div id="main-primary-button">
         <PrimaryButton  id="primary-button" text="REGISTER"/>
