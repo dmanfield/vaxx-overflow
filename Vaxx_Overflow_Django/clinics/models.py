@@ -1,6 +1,8 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
-
+from django.utils import timezone
+from django.utils.translation import gettext_lazy as _
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 
 
 STATE_CHOICES = [
@@ -56,15 +58,6 @@ STATE_CHOICES = [
 ]
 
 
-class Clinic(models.Model):
-    first_name = models.CharField(max_length=25, null=False)
-    last_name = models.CharField(max_length=25, null=False)
-    username = models.CharField(max_length=25, null=False)
-    email = models.EmailField(null=False)
-    password = models.CharField(max_length=25, null=False)
-    provider_name = models.CharField(max_length=50, null=False)
-    business_email = models.EmailField(null=False)
-    business_phone = PhoneNumberField()
 
 class CustomAccountManager(BaseUserManager):
 
