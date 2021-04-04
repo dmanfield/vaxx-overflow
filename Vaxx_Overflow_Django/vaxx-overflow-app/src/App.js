@@ -12,8 +12,11 @@ function App() {
 
   return (
     <div>
-      {/* <InputField label={"Label"} placeholder={"placeholder text"}></InputField> */}
-      {/* <PrimaryButton text='sign in' /> */}
+      <div>
+        <h1>Test</h1>
+      </div>
+      <InputField label={"Label"} placeholder={"placeholder text"}></InputField>
+      <PrimaryButton text='sign in' />
       {/* <SecondaryButton text="Secondary" /> */}
     </div>
   );
