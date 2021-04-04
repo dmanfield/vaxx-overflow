@@ -1,6 +1,6 @@
 <div align="center">
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-  <h1 style="font-family: 'Montserrat', sans-serif;"> vaxx-overflow</h1>
+  
+  <h1 style="@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');font-family: 'Montserrat', sans-serif;"> vaxx-overflow</h1>
 </div>
 <p align="center">
   <img width="460" height="300" src="https://github.com/dmanfield/vaxx-overflow/blob/main/Vaxx_Overflow_Django/vaxx-overflow-app/src/images/Illustration.svg">
