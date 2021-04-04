@@ -65,7 +65,7 @@ color: #333333;
 
 const StyledTextDiv = styled.div`
    
-   width: 312px;
+   width: 330px;
    height: 88px;
    left: 20px;
    top: 20px;

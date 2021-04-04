@@ -30,7 +30,7 @@ box-shadow:  0px 19px 19px 31px #e4e4e4;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .frame-1 {
@@ -47,6 +47,14 @@ box-shadow:  0px 19px 19px 31px #e4e4e4;
   height: 203.85px;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.input-form {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #main-primary-button {
@@ -117,6 +125,14 @@ header h2 {
 
 .initial-form {
   margin: 25px;
+}
+
+.tip {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .buttons-list {
@@ -202,7 +218,6 @@ header h2 {
 }
 
 .long-con {
-  /* height: 50vh; */
   margin-top: 30px;
   margin-bottom: 60px;
   position: relative;
