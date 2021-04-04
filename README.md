@@ -1,6 +1,6 @@
 <div align="center">
   
-  <h1 style="font-size: 36px"> vaxx-overflow</h1>
+  <h1 style="font-size: 50px"> vaxx-overflow</h1>
 </div>
 <p align="center">
   <img width="460" height="300" src="https://github.com/dmanfield/vaxx-overflow/blob/main/Vaxx_Overflow_Django/vaxx-overflow-app/src/images/Illustration.svg">
