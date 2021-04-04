@@ -2,7 +2,7 @@ import SecondaryButton from '../../components/Button/SecondaryButton';
 import CheckBox from '../../components/CheckBox/InlineCheckbox';
 // import InputField from '../../components/InputField/InputField';
 
-function UserScreeningPage() {
+const UserScreeningPage = (props) =>  {
   
   return (
     <div className="centered-div">
@@ -29,7 +29,7 @@ function UserScreeningPage() {
        </div>
     </div>
     <div id="providers-secondary-button">
-        <SecondaryButton text="next" id="secondary-button"  />
+        <SecondaryButton text="next" id="secondary-button"  clickAction={ ()=>{props.history.push("/uregpagefour/")} }/>
       </div>
   </div>
   )
