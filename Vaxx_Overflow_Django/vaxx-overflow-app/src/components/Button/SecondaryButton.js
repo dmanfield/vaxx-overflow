@@ -40,7 +40,7 @@ color: #F26121;
 
 
 function SecondaryButton(x) {
-  return <StyledButton>{x.text}<svg style={{verticalAlign: 'middle'}}width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+  return <StyledButton onClick={x.clickAction} >{x.text}<svg style={{verticalAlign: 'middle'}}width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path  d="M18.51 13H6.5V15H18.51V18L22.5 14L18.51 10V13Z" fill="#F26121"/>
   </svg></StyledButton>
 }
