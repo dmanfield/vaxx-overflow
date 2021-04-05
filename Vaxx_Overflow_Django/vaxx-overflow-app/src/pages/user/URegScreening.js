@@ -10,7 +10,7 @@ const UserScreeningPage = (props) =>  {
       <h1 id="vaxx">Vaxx</h1>
       <h1 id="overflow">OVERFLOW</h1>
       <br></br>
-      <h3 id="heading-paragraph">Next, fill out a screening form to check your elegibilty with local and CDC guidelines.</h3>
+      <h3 style={{paddingTop: "10px"}} id="heading-paragraph">Next, fill out a screening form to check your elegibilty with local and CDC guidelines.</h3>
     </header>
 <br></br>
 <br></br>

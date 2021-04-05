@@ -10,11 +10,11 @@ const NotificationsSent =(props)=> {
         <h1 id="vaxx">Vaxx</h1>
         <h1 id="overflow">OVERFLOW</h1>
         <div id="notification-span">
-        <h4>Notifications have been sent to <mark className="mark">10</mark> eligible patients.</h4>
+        <h4>Notifications have been sent to <mark className="mark">1</mark> eligible patients.</h4>
         </div>
       </header>
       <div id="notification-body">
-          <div><h2><span>8</span><span><mark id="body-mark-one">of</mark></span><span><mark id="body-mark-two">10</mark></span></h2></div>
+          <div><h2><span>1</span><span><mark id="body-mark-one">of</mark></span><span><mark id="body-mark-two">1</mark></span></h2></div>
       </div>
       <div id="notification-body-two">
       <h4>Appointments have been confirmed</h4>

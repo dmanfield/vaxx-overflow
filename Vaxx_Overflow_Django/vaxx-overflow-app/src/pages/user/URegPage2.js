@@ -39,7 +39,7 @@ const URegPageTwo =(props)=> {
       <header className="frame-1">
         <h1 id="vaxx">Vaxx</h1>
         <h1 id="overflow">OVERFLOW</h1>
-        <h3 id="heading-paragraph">We first need to gather your personal and health demographic information.</h3>
+        <h3 style={{paddingTop: "10px"}} id="heading-paragraph">We first need to gather your personal and health demographic information.</h3>
       </header>
       <div className="input-form">
       <form className=" tip">
