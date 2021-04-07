@@ -13,7 +13,7 @@ const UserRegCompleted = () => {
 
       <div className="user-reg-success">
       <img className="green-checkmark" src={require("../../images/greencheckmark.svg").default} alt="Green Checkmark"/>
-        <h3>You have been added to the list. You will receive a text message if an appoitment in your area becomes available.</h3>
+        <h3>You have been added to the list. You will receive a text message if an appointment in your area becomes available.</h3>
       </div>
     </div>
   )

@@ -11,12 +11,12 @@ const URegPageFour = (props) => {
       <header className="frame-1">
         <h1 id="vaxx">Vaxx</h1>
         <h1 id="overflow">OVERFLOW</h1>
-        <h3 id="heading-paragraph">Please answer the following to the best of your ability.</h3>
+        <h3 style={{paddingTop: "10px"}} id="heading-paragraph">Please answer the following to the best of your ability.</h3>
       </header>
       <div className="buttons-list">
         <h4>Additional criteria for eligibility</h4>
         <div style={{display: "grid"}}>
-          <CheckBox class="checkbox" label="School staff members or Childcare Workers"/>
+          <CheckBox class="checkbox" label="School staff members or Childcare Workers"/><br/>
           <CheckBox class="checkbox" label="Healthcare Workers"/>
           <CheckBox class="checkbox" label="Ages 16+"/>
           <CheckBox class="checkbox" label="High Risk Medical Conditions"/>

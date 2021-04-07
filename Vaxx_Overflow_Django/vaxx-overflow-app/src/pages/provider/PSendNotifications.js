@@ -38,11 +38,11 @@ const PRegPageOne =()=> {
       <div className="buttons-list">
         <h4>Additional criteria for eligibility</h4>
         <div style={{display: "grid"}}>
-          <CheckBox class="checkbox" label="School staff members or Childcare Workers"/>
+          <CheckBox class="checkbox" label="School staff members or Childcare Workers"/><br/>
           <CheckBox class="checkbox" label="Healthcare Workers"/>
           <CheckBox class="checkbox" label="Ages 16+"/>
           <CheckBox class="checkbox" label="High Risk Medical Conditions"/>
-          <CheckBox class="checkbox" label="Residents or stf of congregate living facility"/>
+          <CheckBox class="checkbox" label="Residents or staff of congregate living facility"/>
         </div>
         <h4>Number of Doses Available</h4>
         <div className="selectors-list">

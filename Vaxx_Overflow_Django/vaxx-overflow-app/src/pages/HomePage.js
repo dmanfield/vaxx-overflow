@@ -12,7 +12,7 @@ const HomePage = (props) => {
       <header className="frame-1">
         <h1 id="vaxx">Vaxx</h1>
         <h1 id="overflow">OVERFLOW</h1>
-        <h3 id="heading-paragraph">Real time connections for Providers and Vaccine Seekers</h3>
+        <h3 style={{paddingTop: "10px"}} id="heading-paragraph">Real time connections for Vaccine Providers and Vaccine Seekers</h3>
       </header>
       <div>
         <img className="illustration" src={require("../images/Illustration.svg").default} alt="Illustration"/>  

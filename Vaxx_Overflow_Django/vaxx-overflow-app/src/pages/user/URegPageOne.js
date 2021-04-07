@@ -42,7 +42,7 @@ const URegPageOne = (props) => {
       <header className="frame-1">
         <h1 id="vaxx">Vaxx</h1>
         <h1 id="overflow">OVERFLOW</h1>
-        <h3 id="heading-paragraph">Enter the information below to sign in.</h3>
+        <h3 style={{paddingTop: "10px"}} id="heading-paragraph">Enter the information below to sign in.</h3>
       </header>
       <form className="initial-form">
         <InputField placeholder="" label="First Name" value={firstName} changeAction={(e) => setFirstName(e.target.value)} />
